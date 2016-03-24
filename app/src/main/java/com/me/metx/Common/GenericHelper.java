@@ -5,7 +5,7 @@ import java.lang.reflect.Type;
 
 /**
  * Created by Administrator on 2016/3/18.
- * 泛型类型获取
+ * 泛型类型获取服务器测试
  */
 public class GenericHelper {
 
