@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile project(':android-async-http')
     compile project(':autolayout')
+    compile project(':Android-PullToRefresh')
 }
