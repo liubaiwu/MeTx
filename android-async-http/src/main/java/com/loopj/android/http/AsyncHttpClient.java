@@ -87,7 +87,7 @@ import cz.msebera.android.httpclient.protocol.HttpContext;
 import cz.msebera.android.httpclient.protocol.SyncBasicHttpContext;
 
 
-/**
+/**异步请求
  * The AsyncHttpClient can be used to make asynchronous GET, POST, PUT and DELETE HTTP requests in
  * your Android applications. Requests can be made with additional parameters by passing a {@link
  * RequestParams} instance, and responses can be handled by passing an anonymously overridden {@link
