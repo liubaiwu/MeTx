@@ -1,5 +1,6 @@
 package com.me.metx.View;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,10 +14,12 @@ import com.me.metx.Presenter.IPresenter;
 public abstract class ViewImpl implements IView {
     protected View mRootView;
     protected IPresenter presenter;
+    protected Context mContext;
 
     @Override
     public View create(LayoutInflater inflater, ViewGroup group) {
         mRootView=inflater.inflate(getLayoutId(),null);
+        mContext=mRootView.getContext();
         created();
         return mRootView;
     }
@@ -58,7 +61,7 @@ public abstract class ViewImpl implements IView {
      */
     public void Toast(String msg){
 
-        Toast.makeText(mRootView.getContext(),msg,Toast.LENGTH_LONG).show();
+        Toast.makeText(mContext,msg,Toast.LENGTH_LONG).show();
 
     }
 }

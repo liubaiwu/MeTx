@@ -3,13 +3,14 @@ package com.me.metx.Presenter;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.me.metx.Base.BaseActivity;
 import com.me.metx.Common.GenericHelper;
 import com.me.metx.View.IView;
 
 /**
  * Created by Administrator on 2016/3/18.
  */
-public class ActivityPresenterImpl<T extends IView> extends Activity implements IPresenter<T> {
+public class ActivityPresenterImpl<T extends IView> extends BaseActivity implements IPresenter<T> {
 
     T mView;
 

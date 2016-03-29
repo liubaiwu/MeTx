@@ -1,5 +1,6 @@
 package com.me.metx;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -16,7 +17,6 @@ public class MainActivity extends ActivityPresenterImpl<DataListView> {
 
     @Override
     public void created(Bundle savedInstanceState) {
-
 
     }
 }

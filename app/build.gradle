@@ -26,4 +26,5 @@ dependencies {
     compile project(':android-async-http')
     compile project(':autolayout')
     compile project(':Android-PullToRefresh')
+    compile project(':sweet-alert-dialog')
 }
