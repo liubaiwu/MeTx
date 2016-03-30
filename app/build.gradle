@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
         applicationId "com.me.metx"
-        minSdkVersion 16
-        targetSdkVersion 23
+        minSdkVersion  Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion  Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
         versionCode 1
         versionName "1.0"
     }
@@ -27,4 +28,5 @@ dependencies {
     compile project(':autolayout')
     compile project(':Android-PullToRefresh')
     compile project(':sweet-alert-dialog')
+    compile project(':android-Ultra-Pull-To-Refresh')
 }

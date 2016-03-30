@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupWindow;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -14,6 +15,8 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.ResponseHandlerInterface;
 import com.me.metx.MainList;
 import com.me.metx.R;
+import com.me.metx.Test;
+import com.me.metx.Utils.ConvertUtils;
 import com.me.metx.Utils.StringUtils;
 
 import java.io.UnsupportedEncodingException;
@@ -25,7 +28,7 @@ import cz.msebera.android.httpclient.Header;
  * Created by Administrator on 2016/3/18.
  */
 public class DataListView extends ViewImpl {
-    private Button btn_save,btn_list;
+    private Button btn_save,btn_list,btn_ref;
 
     private TextView tv;
     com.handmark.pulltorefresh.library.PullToRefreshScrollView sv;
@@ -34,8 +37,10 @@ public class DataListView extends ViewImpl {
     public void created() {
         btn_save=findViewById(R.id.btn_save);
         btn_list=findViewById(R.id.btn_list);
+        btn_ref=findViewById(R.id.btn_ref);
         tv=findViewById(R.id.tv_html);
         sv=findViewById(R.id.sv_test);
+
 
 
         SweetAlertDialog pDialog = new SweetAlertDialog(mContext, SweetAlertDialog.PROGRESS_TYPE);
@@ -85,6 +90,13 @@ public class DataListView extends ViewImpl {
             @Override
             public void onClick(View v) {
                 mContext.startActivity(new Intent(mContext, MainList.class));
+            }
+        });
+
+        btn_ref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mContext.startActivity(new Intent(mContext, Test.class));
             }
         });
 

@@ -1,2 +1,2 @@
-include ':app', ':android-async-http', ':autolayout', ':sweet-alert-dialog'
+include ':app', ':android-async-http', ':autolayout', ':sweet-alert-dialog', ':android-Ultra-Pull-To-Refresh'
 include ':Android-PullToRefresh'

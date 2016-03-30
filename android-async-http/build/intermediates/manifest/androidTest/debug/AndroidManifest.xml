@@ -3,7 +3,7 @@
     package="com.loopj.android.http.test" >
 
     <uses-sdk
-        android:minSdkVersion="3"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
     <instrumentation
