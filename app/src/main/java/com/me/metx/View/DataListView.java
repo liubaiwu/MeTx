@@ -2,6 +2,7 @@ package com.me.metx.View;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.TrafficStats;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.Button;
@@ -50,6 +51,7 @@ public class DataListView extends ViewImpl {
         pDialog.setCanceledOnTouchOutside(true);
         pDialog.show();
 
+         TrafficStats.getTotalRxBytes();
     }
 
     @Override

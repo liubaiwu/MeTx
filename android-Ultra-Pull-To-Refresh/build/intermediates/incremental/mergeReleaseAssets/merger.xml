@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="G:\MeTx\MeTx\android-Ultra-Pull-To-Refresh\assets"/></dataSet><dataSet config="release"><source path="G:\MeTx\MeTx\android-Ultra-Pull-To-Refresh\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="G:\MeTx\MeTx\android-Ultra-Pull-To-Refresh\assets"/><source path="G:\MeTx\MeTx\android-Ultra-Pull-To-Refresh\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="G:\MeTx\MeTx\android-Ultra-Pull-To-Refresh\src\release\assets"/></dataSet></merger>

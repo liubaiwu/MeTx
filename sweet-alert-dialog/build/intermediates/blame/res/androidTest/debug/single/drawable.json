@@ -8,12 +8,12 @@
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\gray_button_background.xml",
