@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Android-PullToRefresh" />
+            <option value="$PROJECT_DIR$/PushSDK" />
+            <option value="$PROJECT_DIR$/android-Ultra-Pull-To-Refresh" />
             <option value="$PROJECT_DIR$/android-async-http" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/autolayout" />
@@ -19,6 +21,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Android-PullToRefresh" />
+            <option value="$PROJECT_DIR$/PushSDK" />
+            <option value="$PROJECT_DIR$/android-Ultra-Pull-To-Refresh" />
             <option value="$PROJECT_DIR$/android-async-http" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/autolayout" />
