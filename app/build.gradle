@@ -7,8 +7,8 @@ android {
 
     defaultConfig {
         applicationId "com.me.metx"
-        minSdkVersion  Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
-        targetSdkVersion  Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+        minSdkVersion  Integer.parseInt(project.ANDROID_MIN_SDK_VERSION)
+        targetSdkVersion  Integer.parseInt(project.ANDROID_TARGET_SDK_VERSION)
         versionCode 1
         versionName "1.0"
     }
@@ -29,4 +29,5 @@ dependencies {
     compile project(':Android-PullToRefresh')
     compile project(':sweet-alert-dialog')
     compile project(':android-Ultra-Pull-To-Refresh')
+    compile project(':PushSDK')
 }

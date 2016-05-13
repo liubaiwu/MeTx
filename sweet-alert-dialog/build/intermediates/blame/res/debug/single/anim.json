@@ -20,12 +20,12 @@
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\src\\main\\res\\anim\\error_x_in.xml"
     },
     {
-        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\debug\\anim\\success_mask_layout.xml",

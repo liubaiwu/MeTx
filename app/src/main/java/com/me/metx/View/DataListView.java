@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.TrafficStats;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
@@ -14,11 +15,14 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.ResponseHandlerInterface;
+import com.me.metx.Handlers.MxUmengMessageHandler;
 import com.me.metx.MainList;
 import com.me.metx.R;
 import com.me.metx.Test;
 import com.me.metx.Utils.ConvertUtils;
 import com.me.metx.Utils.StringUtils;
+import com.umeng.message.PushAgent;
+import com.umeng.message.UmengRegistrar;
 
 import java.io.UnsupportedEncodingException;
 
@@ -36,6 +40,18 @@ public class DataListView extends ViewImpl {
 
     @Override
     public void created() {
+
+        PushAgent mPushAgent = PushAgent.getInstance(mContext);
+        mPushAgent.enable();
+
+        PushAgent.getInstance(mContext).onAppStart();
+
+        String device_token = UmengRegistrar.getRegistrationId(mContext);
+
+        mPushAgent.setMessageHandler(new MxUmengMessageHandler());
+
+        Log.i("test",device_token);
+
         btn_save=findViewById(R.id.btn_save);
         btn_list=findViewById(R.id.btn_list);
         btn_ref=findViewById(R.id.btn_ref);
