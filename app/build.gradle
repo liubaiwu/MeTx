@@ -1,4 +1,27 @@
+/*文档详情可参考：http://www.open-open.com/lib/view/open1401084786792.html*/
+
 apply plugin: 'com.android.application'
+/*以上语句中的apply是一个方法，给它传递了一个参数plugin，plugin 的值是'com.android.application'。*/
+
+/*
+http://blog.csdn.net/jjwwmlp456/article/details/45057067
+Android-Gradle DSL 简介
+上面示例中的android{ }，就是我们需要主了解的，在android{}块中可以包含以下直接配置项：
+defaultConfig{} 默认配置，是ProductFlavor类型。它共享给其他ProductFlavor使用
+sourceSets{ } 源文件目录设置，是AndroidSourceSet类型。
+buildTypes{ } BuildType类型
+signingConfigs{ } 签名配置，SigningConfig类型
+productFlavors{ } 产品风格配置，ProductFlavor类型
+testOptions{ } 测试配置，TestOptions类型
+aaptOptions{ } aapt配置，AaptOptions类型
+lintOptions{ } lint配置，LintOptions类型
+dexOptions{ } dex配置，DexOptions类型
+compileOptions{ } 编译配置，CompileOptions类型
+packagingOptions{ } PackagingOptions类型
+jacoco{ } JacocoExtension类型。 用于设定 jacoco版本
+splits{ } Splits类型。
+* */
+
 
 android {
 
@@ -7,16 +30,60 @@ android {
 
     defaultConfig {
         applicationId "com.me.metx"
-        minSdkVersion  Integer.parseInt(project.ANDROID_MIN_SDK_VERSION)
-        targetSdkVersion  Integer.parseInt(project.ANDROID_TARGET_SDK_VERSION)
+        minSdkVersion  Integer.parseInt(project.ANDROID_MIN_SDK_VERSION)   // 最小支持sdk版本
+        targetSdkVersion  Integer.parseInt(project.ANDROID_TARGET_SDK_VERSION) // 编译时的目标sdk版本
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
+            // 这里是在 applicationId 中添加了一个后缀。所以『.』要加上
+            applicationIdSuffix ".release"
             // 这里的作用是选择是否混淆代码
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        dev{
+            // 这里是在 applicationId 中添加了一个后缀。所以『.』要加上
+            applicationIdSuffix ".dev"
+            // 这里的作用是选择是否混淆代码
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true  //启用debug的buildType配置
+        }
+
+
+    }
+    productFlavors {
+        /*
+          productFlavors-产品风格：
+          		即不同产品的配置，它会基于上面的公共配置项defaultConfig
+          		下面的配置项与buildTypes{}中的配置项，成类似sql中的全联(full join)关系
+          		 当执行 $gradle build   命令后，会生成：
+          		 	module-flavor1-release-unaligned.apk
+          		 	module-flavor1-release.apk
+          		 	module-flavor1-debug-unaligned.apk
+          		 	module-flavor1-debug.apk
+          		 	module-flavor1-aabbcc.apk
+          		 	...flavor2...apk
+
+          applicationId 用于标识 在谷歌Play商店上的唯一标识 默认不配置，则与app的AndroidManifest.xml中的package一致
+          		仅替换<manifest>中的package属性值，其它不受影响
+
+         */
+
+        flavor1 {
+            proguardFiles 'proguard-rules.pro'
+            applicationId "com.me.metx" //比如 专业版
+            manifestPlaceholders = [channelID: "百度应用平台"]
+        }
+
+        flavor2 {
+            proguardFile 'proguard-rules.pro'
+            applicationId "com.me.metx" //比如 免费版
+            manifestPlaceholders = [channelID: "豌豆夹"]
         }
     }
 }
