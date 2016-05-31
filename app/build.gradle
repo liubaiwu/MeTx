@@ -28,8 +28,8 @@ splits{ } Splits类型。
 
 android {
 
-    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
-    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)// 编译SDK的版本
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION // build tools的版本
 
     defaultConfig {
         applicationId "com.me.metx"
