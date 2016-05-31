@@ -1,4 +1,7 @@
-/*文档详情可参考：http://www.open-open.com/lib/view/open1401084786792.html*/
+/*文档详情可参考：
+http://www.open-open.com/lib/view/open1401084786792.html
+*https://segmentfault.com/a/1190000002439306
+* */
 
 apply plugin: 'com.android.application'
 /*以上语句中的apply是一个方法，给它传递了一个参数plugin，plugin 的值是'com.android.application'。*/
@@ -87,6 +90,18 @@ android {
         }
     }
 }
+
+
+/*
+*程序中会依赖别的包，或者程序，需要引入别的类库。前面也说到了，支持maven。
+对于本地的类库，可以这样引入：
+
+dependencies {
+    compile files('libs/foo.jar')   //单个文件
+    compile fileTree(dir: 'libs', include: ['*.jar'])  //多个文件
+}
+
+* */
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
