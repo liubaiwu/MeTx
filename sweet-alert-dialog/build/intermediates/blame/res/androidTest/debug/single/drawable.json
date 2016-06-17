@@ -36,12 +36,12 @@
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\error_center_x.xml",
-        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\bundles\\debug\\res\\drawable\\error_center_x.xml"
-    },
-    {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\error_center_x.xml",
+        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\bundles\\debug\\res\\drawable\\error_center_x.xml"
     },
     {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_background.xml",

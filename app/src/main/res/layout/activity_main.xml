@@ -47,6 +47,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="11111"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgs"
+                />
+
         </LinearLayout>
     </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
 

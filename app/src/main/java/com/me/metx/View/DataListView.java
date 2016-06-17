@@ -7,10 +7,12 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -36,6 +38,8 @@ public class DataListView extends ViewImpl {
     private Button btn_save,btn_list,btn_ref;
 
     private TextView tv;
+
+    private ImageView imgs;
     com.handmark.pulltorefresh.library.PullToRefreshScrollView sv;
 
     @Override
@@ -58,7 +62,10 @@ public class DataListView extends ViewImpl {
         tv=findViewById(R.id.tv_html);
         sv=findViewById(R.id.sv_test);
 
+        imgs=findViewById(R.id.imgs);
 
+        String internetUrl = "http://i.imgur.com/idojSYm.png";
+        Glide.with(mContext).load(internetUrl).into(imgs);
 
         SweetAlertDialog pDialog = new SweetAlertDialog(mContext, SweetAlertDialog.PROGRESS_TYPE);
         pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
@@ -68,6 +75,10 @@ public class DataListView extends ViewImpl {
         pDialog.show();
 
          TrafficStats.getTotalRxBytes();
+
+
+
+
     }
 
     @Override

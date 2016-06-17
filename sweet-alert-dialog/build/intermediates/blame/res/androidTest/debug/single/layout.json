@@ -68,12 +68,12 @@
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "G:\\MeTx\\MeTx\\sweet-alert-dialog\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_toolbar.xml",
