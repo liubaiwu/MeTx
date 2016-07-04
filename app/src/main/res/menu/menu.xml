@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/user_p"
+        android:icon="@mipmap/m"
+        android:showAsAction="always"
+        android:title="用户"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/write_p"
+        android:icon="@mipmap/m"
+        android:showAsAction="always"
+        android:title="发布"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:title="收藏"
+        android:id="@+id/favo_p"
+        android:icon="@mipmap/m"
+        android:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+</menu>

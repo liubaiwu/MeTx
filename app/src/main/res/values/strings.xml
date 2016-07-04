@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MeTx</string>
+    <string name="actionbarName">标题</string>
 </resources>

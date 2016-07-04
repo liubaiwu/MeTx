@@ -8,36 +8,36 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@android:style/Theme.Holo.Light"
         tools:replace="android:icon">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:logo="@mipmap/t"
+            android:label="@string/actionbarName"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainList"></activity>
-        <activity android:name=".Test"></activity>
+        <activity android:name=".MainList" />
+        <activity android:name=".Test" />
 
-        <meta-data android:name="design_width" android:value="768">
-        </meta-data>
-        <meta-data android:name="design_height" android:value="1280">
-        </meta-data>
+        <meta-data
+            android:name="design_width"
+            android:value="768"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1280"></meta-data>
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5733fbae67e58e27c3002199" >
-        </meta-data>
+            android:value="5733fbae67e58e27c3002199"></meta-data>
         <meta-data
             android:name="UMENG_MESSAGE_SECRET"
-            android:value="95d8ce7f75057085355d3abc47522753" >
-        </meta-data>
+            android:value="95d8ce7f75057085355d3abc47522753"></meta-data>
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="${channelID}" >
-        </meta-data>
+            android:value="${channelID}"></meta-data>
 
     </application>
-
 
 </manifest>

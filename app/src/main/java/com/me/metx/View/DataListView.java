@@ -1,5 +1,7 @@
 package com.me.metx.View;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.TrafficStats;
@@ -44,7 +46,8 @@ public class DataListView extends ViewImpl {
 
     @Override
     public void created() {
-
+//        ActionBar ab= ((Activity) mContext).getActionBar();
+//        ab.show();
         PushAgent mPushAgent = PushAgent.getInstance(mContext);
         mPushAgent.enable();
 
